@@ -47,6 +47,21 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 <hr>
 
-### Link importante
+## Important
 
-[Dockerizando uma aplicação React JS](https://blog.codeexpertslearning.com.br/dockerizando-uma-aplica%C3%A7%C3%A3o-react-js-f6a22e93bc5d)
+Build the Docker image for the current folder and tag it with `dockerized-react`
+```
+docker build . -t dockerized-react
+```
+
+Check the image was created
+```
+docker images | grep dockerized-react
+```
+
+Run the image in detached mode and map port 3000 inside the container with 3000 on current host
+```
+docker run -p 3000:3000 -d dockerized-react
+```
+## Important Link
+How to [Dockerizing a React app](https://jsramblings.com/dockerizing-a-react-app/).
