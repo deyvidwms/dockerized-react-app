@@ -28,19 +28,24 @@ export const Header = styled.div`
     width: 150px;
   }
 
-  p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #FFF;
-    transition: all ease 0.3s;
-    cursor: pointer;
+  a {
+    text-decoration: none;
 
-    &:hover {
-      color: #CCC;
+    p {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #FFF;
+      transition: all ease 0.3s;
+      cursor: pointer;
+  
+      &:hover {
+        color: #CCC;
+      }
     }
   }
+
 `;
 
 export const OutlinedButton = styled.button`

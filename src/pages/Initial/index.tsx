@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import BGImage from '../../assets/images/bg.jpg';
 import LogoBranca from '../../assets/images/logo-branca.png';
@@ -15,7 +16,9 @@ const Initial: React.FC = () => {
         <Header>
           <img src={LogoBranca} alt="Logo do projeto" />
 
-          <p>Entrar</p>
+          <Link to='/login'>
+            <p>Entrar</p>
+          </Link>
         </Header>
         <Content>
           <div>
