@@ -22,9 +22,14 @@ const Initial: React.FC = () => {
         </Header>
         <Content>
           <div>
-            <h1>CADASTRE OS SEUS FILMES AQUI</h1>
+            <h1>Seja bem-vindo ao nosso site!</h1>
             <hr />
-            <h3>Um espaço totalmente novo para você guardar os seus filmes favoritos e aqueles que você ainda pretende assistir.</h3>
+            <h3>
+              Aqui você pode cadastrar todos os filmes que já assistiu e compartilhar suas opiniões com outros fãs de cinema. <br />
+              Cadastre-se para começar a registrar os filmes que você assistiu. <br />
+              Você pode adicionar o título, o ano de lançamento, a classificação indicativa, sua nota de avaliação e comentários sobre o filme. <br />
+              Aproveite para descobrir novos títulos e compartilhá-los com seus amigos!
+            </h3>
             <OutlinedButton>Adicionar <FaPlus /></OutlinedButton>
           </div>
           <div>

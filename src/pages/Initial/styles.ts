@@ -133,7 +133,7 @@ export const Content = styled.div`
       h3 {
         max-width: 730px;
         font-family: 'Roboto', sans-serif;
-        font-size: 2rem;
+        font-size: 1.5rem;
         color: #CCC;
         margin-bottom: 20px;
 
@@ -159,11 +159,11 @@ export const Content = styled.div`
         }
 
         @media (max-width: 850px) {
-          width: 400px;
+          width: 50%;
         }
 
-        @media (max-width: 540px) {
-          width: 80%;
+        @media (max-width: 500px) {
+          display: none;
         }
       }
     }
