@@ -10,10 +10,7 @@ import InputField from '../../components/InputField';
 import { FaArrowLeft } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
-type FormValues = {
-  usuario: string;
-  senha: string;
-}
+import { FormValues } from '../../types/FormValues';
 
 const schema = yup
   .object()
@@ -63,13 +60,13 @@ const Login: React.FC = () => {
 
               <p>
                 Ainda não possui conta?
-                <Link to="/">
+                <Link to="/criar-conta">
                   Criar conta
                 </Link>
               </p>
 
               <Link to="/">
-                <p> <FaArrowLeft /> Voltar </p>
+                <p> <FaArrowLeft /> Voltar para a página anterior </p>
               </Link>
               
             </CardLoginFooter>

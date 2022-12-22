@@ -1,19 +1,15 @@
 import React from 'react';
 import { UseFormRegister } from 'react-hook-form';
+import { FormValues } from '../../types/FormValues';
 
 import { Container } from './styles';
-
-type FormValues = {
-  usuario: string;
-  senha: string;
-}
 
 type dynamicJSON = {
   [key: string]: any
 }
 
 type Props = { 
-  name: 'usuario' | 'senha';
+  name: 'usuario' | 'email' | 'senha' | 'confSenha';
   label: string; 
   register: UseFormRegister<FormValues>;
   errors: dynamicJSON;  
